@@ -1,0 +1,189 @@
+body{
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0;
+}
+header{
+    background-color: rgb(70, 70, 228);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    width: 100%;
+}
+header h1{
+    
+    margin-left: 3rem;
+}
+header h1 a{
+    color: white;
+    font-size: 2.3rem;
+    text-decoration: none;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    padding-right: 4rem;
+}
+@media (max-width: 46.21rem){
+	.menu-list{
+		display: none;
+	}}
+    .menu-btn{
+        display: flex;
+        flex-direction: column;
+        width: 4rem;
+        height: 3rem;
+        justify-content: space-around;
+        padding-right: 1.5rem;
+    }
+    .menu-btn span{
+        width: 100%;
+        height: 3px;
+        background-color: rgb(253, 253, 253);
+    }
+    @media(min-width:46.21rem){
+        .menu-btn{
+            display: none;
+        }
+    }
+header li{
+    padding: 1rem 2rem 1rem 2rem;
+}
+header li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+#side-drawer{
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    }
+    #side-drawer:target{
+        display: block;
+    }
+    #side-drawer ul{
+     list-style: none;
+     margin: 0;
+     text-align: center;
+    }
+    #side-drawer li{
+     margin: 1rem 0;
+    }
+    #side-drawer a{
+     text-decoration: none;
+     color: white;
+     font-size: 1.5rem;
+    }
+    main{
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .demo{
+        display: flex;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .demo a{
+        text-decoration: none;
+    }
+    .demo time{
+        padding-left: 1rem;
+    }
+    main h1{
+        margin-left: 28rem;
+    }
+    .btnn{
+        text-align: center;
+    }
+    .btn-alt{
+        background-color: white;
+        outline: none;
+        color: rgb(70, 70, 228);
+        padding-right: 1.8rem;
+        border: none;
+        text-align: center;
+        }
+ .plists
+    {
+            list-style: none;
+        }
+    main .pp{
+        text-align: center;
+    }
+    main .pp1{
+        text-align: center;
+    }
+    #commentss article{
+        background-color: rgb(216, 222, 228);
+        border-radius: 0.4rem;
+        width: 40%;
+        margin: 0.12rem auto;
+        box-shadow: 1px 1px 2px rgb(185, 181, 172);
+    }
+    #commentss article h2{
+        text-align: center;
+    
+    }
+    #commentss article p{
+        text-align: center;
+        margin-top: -0.83rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #commentss ol{
+        list-style: none;
+    }
+    form{
+        background-color:rgb(248, 245, 239);
+        width: 35%;
+        margin: 0.06rem auto;
+        box-shadow: 2px 2px 3px rgb(216, 206, 189);
+        border-radius: 0.3rem;
+        padding: 0.3rem 0 0.6rem 0;
+    }
+    form h2{
+        text-align: center;
+    }
+    form ul{
+        list-style: none;
+    }
+    form label{
+        display: block;
+       margin: 0.18rem 0 0.18rem -0.9rem;
+    }
+    form input{
+        width: 96%;
+        margin: 0 0 0.4rem -0.9rem;
+        padding: 0.2rem 0;
+        outline: none;
+        border-radius: 0.3rem;
+        border: 1px solid gray;
+    }
+    form textarea{
+        width: 95.6%;
+        resize: vertical;
+        margin: 0 0 -0.5rem -0.9rem;
+        outline: none;
+        border: 1px solid gray;
+        border-radius: 0.3rem;
+    }
+    form button{
+        background-color: rgb(78, 67, 235);
+        border-radius: 0.3rem;
+        color: white;
+        text-align: center;
+        padding: 0.3rem 0.6rem;
+        border: none;
+        margin: 0 0 0 1.4rem;
+    }
+    form button:hover{
+       color: black;
+       background-color: white;
+        border: 1px solid rgb(83, 27, 187);
+    }

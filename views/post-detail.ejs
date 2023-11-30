@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Posts</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/post-detail.css">
+	<script src="/scripts/comments.js" defer></script>
+</head>
+<body>
+	<header>
+		<%- include('includes/header') %>
+	</header>
+<main>
+	<h1><%= post.title %></h1>
+	<section class="demo">
+		<address>
+			<a href="mailto:<%= post.author.email %>"><%= post.author.name %></a>
+		</address>
+		<time datetime="<%= post.date %>"><i><%= post.humanReadableDate %></i></time>
+	</section>
+	<hr/>
+		<section>
+			<p><%= post.body %></p>
+	</section>
+	<hr>
+	<section id="commentss">
+		<p class="pp">This posts might have comments.You can load them if you want to view them</p>
+		<div class="btnn">
+			<button id="load-comments-btn" class="btn-alt" data-postid="<%= post._id %>">Load comments</button>
+		</div>
+	</section>
+	<section id="commentss-form">
+		<form action="/posts/<%= post._id %>/comments" method="POST">
+			<h2>Leave a comment</h2>
+			<section>
+				<ul>
+					<li>
+						<label for="user-title">Comment title</label>
+						<input type="text" name="title" value="" id="user-title" required="">
+					</li>
+					<li>
+						<label for="comment">Your comment</label>
+						<textarea name="comment" id="comment" required minlength="10" maxlength="200"></textarea>
+					</li>
+				</ul>
+				<button type="submit">Save comment</button>
+			</section>
+		</form>
+	</section>
+</main>
+</body>
+</html>

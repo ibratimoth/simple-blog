@@ -1,0 +1,146 @@
+body{
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0;
+}
+header{
+    background-color: rgb(70, 70, 228);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    width: 100%;
+}
+header h1{
+    
+    margin-left: 3rem;
+}
+header h1 a{
+    color: white;
+    font-size: 2.3rem;
+    text-decoration: none;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    padding-right: 4rem;
+}
+@media (max-width: 46.21rem){
+	.menu-list{
+		display: none;
+	}}
+    .menu-btn{
+        display: flex;
+        flex-direction: column;
+        width: 4rem;
+        height: 3rem;
+        justify-content: space-around;
+        padding-right: 1.5rem;
+    }
+    .menu-btn span{
+        width: 100%;
+        height: 3px;
+        background-color: rgb(253, 253, 253);
+    }
+    @media(min-width:46.21rem){
+        .menu-btn{
+            display: none;
+        }
+    }
+header li{
+    padding: 1rem 2rem 1rem 2rem;
+}
+header li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+#side-drawer{
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    }
+    #side-drawer:target{
+        display: block;
+    }
+    #side-drawer ul{
+     list-style: none;
+     margin: 0;
+     text-align: center;
+    }
+    #side-drawer li{
+     margin: 1rem 0;
+    }
+    #side-drawer a{
+     text-decoration: none;
+     color: white;
+     font-size: 1.5rem;
+    }
+main h1{
+    text-align: center;
+    font-size: 2.2rem;
+}
+.para{
+    text-align: center;
+}
+.bbtn{
+    text-align: center;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(70, 70, 228);
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.7rem;
+}
+.plists{
+    list-style: none;
+}
+main article{
+    background-color: rgb(216, 222, 228);
+    border-radius: 0.4rem;
+    width: 40%;
+    margin: 0.12rem auto;
+    box-shadow: 1px 1px 2px rgb(185, 181, 172);
+}
+main article h2{
+    text-align: center;
+
+}
+main article p{
+    text-align: center;
+    margin-top: -0.83rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btnl{
+    text-align: center;
+    display: flex;
+    padding-bottom: 0.7rem;
+    margin: 0.06rem 0.24rem 0.28rem 5.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btnl button{
+background-color: rgb(216, 222, 228);
+outline: none;
+color: rgb(70, 70, 228);
+padding-right: 1.8rem;
+border: none;
+}
+.link1{
+    text-decoration: none;
+    color: rgb(70, 70, 228);
+    padding-right: 1rem;
+}
+.link2{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(70, 70, 228);
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.7rem;
+}

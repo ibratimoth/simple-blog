@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CreatePost</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/update-post.css">
+</head>
+<body>
+    <%- include('includes/header') %>
+<main>
+    <h1>Update post</h1>
+    <form action="/posts/<%= post._id %>/edit" method="POST">
+        <section>
+            <ul>
+                <li>
+                    <label for="user-title">Title</label>
+                    <input type="text" name="title" value="<%= post.title %>" id="user-title" required="">
+                </li>
+                <li>
+                    <label for="user-summary">Summary</label>
+                    <input type="text" name="summary"value="<%= post.summary %>" id="user-summary" required="">
+                </li>
+                <li>
+                    <label for="user-content">Post content</label>
+                    <textarea name="content" id="user-content" required minlength="10" maxlength="200"><%= post.body %></textarea>
+                </li>
+            </ul>
+            <button type="submit">Update Post</button>
+        </section>
+    </form>
+</main>
+</body>
+</html>
